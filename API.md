@@ -313,8 +313,8 @@
 	- price ： 价格
 	- sortId : 123
 	- publishId : 发布者ID
-    - createTime : 创建时间
-    - views ：浏览人数
+  	- createTime : 创建时间
+ 	- views ：浏览人数
 
 ```json
 {
@@ -355,22 +355,28 @@
 	- price ： 价格
 	- sortId : 123
 	- publishId : 发布者ID
-    - createTime : 创建时间
-    - view ：浏览人数
+   	- createTime : 创建时间
+    	- views ：浏览人数
 	- status : 商品状态   0 审核未通过|1 审核通过|2 已出售|3 已关闭
+	- content: 内容
+	- profileImg: 发布者头像地址,
+        - wechatName: 发布者昵称,
+	- img: 商品图片数组（待定）
 ```json
 {
 	"code" : 0,
 	"data" : {
-		"itmId" : 123,
+		"itemId" : 123,
 		"name" : "商品1",
 		"price" : 123,
 		"sortId" : 123,
 		"content" : "asdasd",
 		"publishId" : 123,
-        "createTime" : "2010-10-10",
-        "views" : 100,
-		"status" : 1
+                "createTime" : "2010-10-10",
+                "views" : 100,
+		"status" : 1,
+		"profileImg": 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4T',
+      		"wechatName": '二狗子'
 	}
 }
 ```
@@ -393,7 +399,7 @@
 		},
 		{
 			"sortId" : 2,
-            "sortIndex" : 2,
+          		"sortIndex" : 2,
 			"sortName" : "二手书籍"
 		},
 	]
